@@ -1,6 +1,6 @@
 ![Angular](src/assets/angular.png "Angular")
 ![Arrows](src/assets/if_arrow_7_393270.png "Arrows")
-![Qlik Sense](src/assets/QS_Engine.jpg "Qlik Sense")
+![Qlik Sense](src/assets/QS_Engine_thumb.jpg "Qlik Sense")
 
 # Angular5 with Qlik Sense's Capabilities API
 
