@@ -3,17 +3,25 @@
 		<div class="col-md-12 text-center">
 			<img width="100" alt="Angular Logo" src="assets/angular.svg">
 			<img src="assets/if_arrow_7_393270.png" width="100">
-			<img src="assets/QS_Engine.jpg" width="100">
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-md-12 text-center">
-			<h1> {{ title }} </h1>
+			<img src="assets/QS_Engine_thumb.jpg" width="100">
 		</div>
     </div>
-	<div class="row">
-		<div class="col-md-12">
-			<qdt-component [Component]="QdtViz" [props]="viz1props"></qdt-component>
-		</div>
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h1> {{ title }} </h1>
+        </div>
     </div>
+    <div class="row">
+        <div class="col-md-12">
+            <p>This is a simple Angular 5 template that was created by the Angular CLI.</p>
+            <p>It uses the Helpdesk App.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <a routerLink="/" routerLinkActive="active">Dashboard</a> | 
+            <a routerLink="/performance" routerLinkActive="active">Performance</a> 
+        </div>
+    </div>
+    <router-outlet></router-outlet>
 </div>

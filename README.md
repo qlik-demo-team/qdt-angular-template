@@ -4,7 +4,7 @@
 
 # Angular5 with Qlik Sense's Capabilities API
 
-[![Version](http://img.shields.io/badge/version->=1.0.0-brightgreen.svg?style=plastic)]()
+[![Version](http://img.shields.io/badge/version-1.0.1-brightgreen.svg?style=plastic)]()
 [![Angular](http://img.shields.io/badge/Angular->=5.1.3-brightgreen.svg?style=plastic)](https://angular.io/)
 [![Angular-cli](http://img.shields.io/badge/AngularCli->=1.6.3-brightgreen.svg?style=plastic)](https://cli.angular.io/)
 [![Typescript](http://img.shields.io/badge/Typescript->=2.4.2-brightgreen.svg?style=plastic)](http://www.typescriptlang.org/)

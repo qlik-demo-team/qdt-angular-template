@@ -1,5 +1,6 @@
 import { Component, OnInit, ElementRef, Input } from '@angular/core';
-import { QdtComponent } from 'qdt-components';
+import * as qConfig from '../../../qConfig.json';
+import { QdtComponents } from 'qdt-components';
 
 @Component({
 	selector: 'qdt-component',
@@ -9,12 +10,15 @@ import { QdtComponent } from 'qdt-components';
 export class QdtComponentComponent implements OnInit {
 
 	@Input() Component: Function;
-	@Input() props: object;
+    @Input() props: object;
+
+    static QdtComponent = new QdtComponents(qConfig);
 
 	constructor(private elementRef: ElementRef) { }
 
 	ngOnInit() {
-		QdtComponent.render(this.Component, this.props, this.elementRef.nativeElement);
+        let Component = QdtComponentComponent.QdtComponent.getViz()._v;
+        QdtComponentComponent.QdtComponent.render(Component, this.props, this.elementRef.nativeElement);
 	}
 
 }
