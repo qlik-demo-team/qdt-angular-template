@@ -2,7 +2,7 @@
 ![Arrows](src/assets/if_arrow_7_393270.png "Arrows")
 ![Qlik Sense](src/assets/QS_Engine_thumb.jpg "Qlik Sense")
 
-# Angular5 with Qlik Sense's Capabilities API
+# Angular5 with [qdt-components](https://github.com/qlik-demo-team/qdt-components)
 
 [![Version](http://img.shields.io/badge/version-1.0.1-brightgreen.svg?style=plastic)]()
 [![Angular](http://img.shields.io/badge/Angular->=5.1.3-brightgreen.svg?style=plastic)](https://angular.io/)
@@ -10,11 +10,12 @@
 [![Typescript](http://img.shields.io/badge/Typescript->=2.4.2-brightgreen.svg?style=plastic)](http://www.typescriptlang.org/)
 [![Webpack](http://img.shields.io/badge/Webpack->=3.10.0-brightgreen.svg?style=plastic)](https://webpack.js.org/)
 
-- An Angular 5 template that is using qdt-components for connecting to Qlik Sense and rendering elements
+- An Angular 5 template that is using [qdt-components](https://github.com/qlik-demo-team/qdt-components) for connecting to Qlik Sense and rendering elements
 
 ## Installation
 - Install Angular-cli from https://cli.angular.io/
 - npm install
+- Rename src/qConfig.example.json to qConfig.json and add the connection data, like Host, Port etc
 
 ## Usage
 - Run `npm start` for a https dev server or `ng serve` for http. 
