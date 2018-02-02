@@ -1,6 +1,4 @@
-![Angular](src/assets/angular.png "Angular")
-![Arrows](src/assets/if_arrow_7_393270.png "Arrows")
-![Qlik Sense](src/assets/QS_Engine_thumb.jpg "Qlik Sense")
+![Banner](src/assets/banner_angular_h250.jpg "banner")
 
 # Angular5 with [qdt-components](https://github.com/qlik-demo-team/qdt-components)
 
@@ -19,7 +17,7 @@
 
 ## Usage
 - Run `npm start` for a https dev server or `ng serve` for http. 
-- Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- Navigate to `http://localhost:3000/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 - Run `ng generate component components/component-name --style=less` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.

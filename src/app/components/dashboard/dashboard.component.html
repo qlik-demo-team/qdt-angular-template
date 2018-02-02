@@ -8,3 +8,33 @@
         <qdt-component [Component]="QdtViz" [props]="viz2props"></qdt-component>
     </div>
 </div>
+
+
+
+<div class="row">
+    <div class="col-md-12">
+        <h5>dashboard.component.html</h5>
+        <pre><code class="html">
+            < div class="row">
+                < div class="col-md-12">
+                    < qdt-component [Component]="QdtViz" [props]="viz1props">< /qdt-component>
+                < /div>
+            < /div>
+            < div class="row">
+                < div class="col-md-12">
+                    < qdt-component [Component]="QdtViz" [props]="viz2props">< /qdt-component>
+                < /div>
+            < /div>
+            </code>
+        </pre>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <h5>dashboard.component.ts</h5>
+        <pre><code class="typescript">
+            <section [innerHTML]="jsContent1" highlight-js-content=".typescript"></section>
+        </code></pre>
+    </div>
+</div>
