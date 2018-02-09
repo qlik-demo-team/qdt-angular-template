@@ -1,30 +1,48 @@
 <div class="row">
-    <div class="col-md-12">
-        <qdt-component [Component]="QdtViz" [props]="viz1props"></qdt-component>
+    <div class="col-md-12 text-right">
+        <qdt-component [Component]="'QdtButton'" [props]="btn1props"></qdt-component>
     </div>
 </div>
 <div class="row">
     <div class="col-md-12">
-        <qdt-component [Component]="QdtViz" [props]="viz2props"></qdt-component>
+        <qdt-component [Component]="'QdtSelectionToolbar'"></qdt-component>
     </div>
 </div>
-
-
+<div class="row">
+    <div class="col-md-12">
+        <qdt-component [Component]="'QdtViz'" [props]="viz3props"></qdt-component>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-4 text-center">
+        <h4>High Priority Cases</h4>
+        <h2><qdt-component [Component]="'QdtKpi'" [props]="kpi1props"></qdt-component></h2>
+    </div>
+    <div class="col-md-4 text-center">
+        <h4>Medium Priority Cases</h4>
+        <h2><qdt-component [Component]="'QdtKpi'" [props]="kpi2props"></qdt-component></h2>
+    </div>
+    <div class="col-md-4 text-center">
+        <h4>Low Priority Cases</h4>
+        <h2><qdt-component [Component]="'QdtKpi'" [props]="kpi3props"></qdt-component></h2>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <qdt-component [Component]="'QdtViz'" [props]="viz1props"></qdt-component>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <qdt-component [Component]="'QdtViz'" [props]="viz2props"></qdt-component>
+    </div>
+</div>
 
 <div class="row">
     <div class="col-md-12">
         <h5>dashboard.component.html</h5>
         <pre><code class="html">
-            < div class="row">
-                < div class="col-md-12">
-                    < qdt-component [Component]="QdtViz" [props]="viz1props">< /qdt-component>
-                < /div>
-            < /div>
-            < div class="row">
-                < div class="col-md-12">
-                    < qdt-component [Component]="QdtViz" [props]="viz2props">< /qdt-component>
-                < /div>
-            < /div>
+            {{htmlContent}}
             </code>
         </pre>
     </div>
@@ -34,7 +52,7 @@
     <div class="col-md-12">
         <h5>dashboard.component.ts</h5>
         <pre><code class="typescript">
-            <section [innerHTML]="jsContent1" highlight-js-content=".typescript"></section>
+            {{jsContent}}
         </code></pre>
     </div>
 </div>
