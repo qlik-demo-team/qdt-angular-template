@@ -25,12 +25,12 @@ export class QdtComponentComponent implements OnInit {
 	@Input() Component: string;
     @Input() props: object;
 
-    static QdtComponent = new QdtComponents(qConfig.config, qConfig.connections);
+    static qdtComponent = new QdtComponents(qConfig.config, qConfig.connections);
 
 	constructor(private elementRef: ElementRef) { }
 
 	ngOnInit() {
-        QdtComponentComponent.QdtComponent.render(this.Component, this.props, this.elementRef.nativeElement);
+        QdtComponentComponent.qdtComponent.render(this.Component, this.props, this.elementRef.nativeElement);
 	}
 
 }

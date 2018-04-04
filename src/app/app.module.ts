@@ -9,6 +9,7 @@ import { QdtComponentComponent } from './components/qdt-component/qdt-component.
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { DashboardVizApiComponent } from './components/dashboard-viz-api/dashboard-viz-api.component';
 import { PerformanceComponent } from './components/performance/performance.component';
+import { PicassoComponent } from './components/picasso/picasso.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { PerformanceComponent } from './components/performance/performance.compo
     QdtComponentComponent,
     DashboardComponent,
     DashboardVizApiComponent,
-    PerformanceComponent
+    PerformanceComponent,
+    PicassoComponent
   ],
   imports: [
     RoutingModule,
