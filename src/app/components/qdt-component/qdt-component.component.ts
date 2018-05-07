@@ -1,5 +1,4 @@
 import { Component, OnInit, ElementRef, Input } from '@angular/core';
-// import * as qConfig from '../../../qConfig.json';
 import * as QdtComponents from 'qdt-components';
 let qConfig = {
     "config": {
@@ -29,7 +28,9 @@ export class QdtComponentComponent implements OnInit {
 
 	constructor(private elementRef: ElementRef) { }
 
-	ngOnInit() {
+	async ngOnInit() {
+        // const qApp = await QdtComponentComponent.qdtComponent.qAppPromise;
+        // console.log(qApp)
         QdtComponentComponent.qdtComponent.render(this.Component, this.props, this.elementRef.nativeElement);
 	}
 

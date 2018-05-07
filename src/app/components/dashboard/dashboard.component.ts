@@ -64,7 +64,7 @@ export class DashboardComponent implements OnInit, AfterViewInit {
     viz1props = {id: 'a5e0f12c-38f5-4da9-8f3f-0e4566b28398', height:'300px'};
     viz2props = {id: '298bbd6d-f23d-4469-94a2-df243d680e0c', height:'300px'};
     viz3props = {id: 'ycppXj', height:'200px'};
-    kkpi1props = {cols: [null,"=Count( {$<Priority={'High'}, Status -={'Closed'} >} Distinct %CaseId )"]};
+    kpi1props = {cols: [null,"=Count( {$<Priority={'High'}, Status -={'Closed'} >} Distinct %CaseId )"]};
     kpi2props = {cols: [null,"=Count( {$<Priority={'Medium'}, Status -={'Closed'} >} Distinct %CaseId )"]};
     kpi3props = {cols: [null,"=Count( {$<Priority={'Low'}, Status -={'Closed'} >} Distinct %CaseId )"]};
   
