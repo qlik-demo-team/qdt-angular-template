@@ -1,6 +1,7 @@
 import { Component, OnInit, ElementRef, Input } from '@angular/core';
 import * as QdtComponents from 'qdt-components';
-let qConfig = {
+
+const qConfig = {
     "config": {
         "host": "sense-demo.qlik.com",
         "secure": true,
@@ -14,10 +15,11 @@ let qConfig = {
     }
 }
 
+
 @Component({
-	selector: 'qdt-component',
-	templateUrl: './qdt-component.component.html',
-	styleUrls: ['./qdt-component.component.less']
+  selector: 'qdt-component',
+  templateUrl: './qdt-component.component.html',
+  styleUrls: ['./qdt-component.component.css']
 })
 export class QdtComponentComponent implements OnInit {
 
@@ -25,13 +27,11 @@ export class QdtComponentComponent implements OnInit {
     @Input() props: object;
 
     static qdtComponent = new QdtComponents(qConfig.config, qConfig.connections);
-
+    
 	constructor(private elementRef: ElementRef) { }
 
-	async ngOnInit() {
-        // const qApp = await QdtComponentComponent.qdtComponent.qAppPromise;
-        // console.log(qApp)
-        QdtComponentComponent.qdtComponent.render(this.Component, this.props, this.elementRef.nativeElement);
-	}
+  ngOnInit() {
+    QdtComponentComponent.qdtComponent.render(this.Component, this.props, this.elementRef.nativeElement);
+  }
 
 }
