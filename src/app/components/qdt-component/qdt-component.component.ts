@@ -1,12 +1,12 @@
 import { Component, OnInit, ElementRef, Input } from '@angular/core';
-import * as QdtComponents from 'qdt-components';
+import QdtComponents from 'qdt-components';
 
 const qConfig = {
     "config": {
         "host": "sense-demo.qlik.com",
         "secure": true,
         "port": 443,
-        "prefix": "/",
+        "prefix": "",
         "appId": "133dab5d-8f56-4d40-b3e0-a6b401391bde"
     },
     "connections": { 
@@ -24,9 +24,9 @@ const qConfig = {
 export class QdtComponentComponent implements OnInit {
 
 	@Input() Component: string;
-    @Input() props: object;
+  @Input() props: object;
 
-    static qdtComponent = new QdtComponents(qConfig.config, qConfig.connections);
+  static qdtComponent = new QdtComponents(qConfig.config, qConfig.connections);
     
 	constructor(private elementRef: ElementRef) { }
 

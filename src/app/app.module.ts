@@ -19,6 +19,7 @@ import { PicassoScatterplotWithImagesComponent } from './components/picasso-scat
 import { PicassoLineChartComponent } from './components/picasso-line-chart/picasso-line-chart.component';
 import { PicassoMultiLineChartComponent } from './components/picasso-multi-line-chart/picasso-multi-line-chart.component';
 import { PicassoComboLineBarchartComponent } from './components/picasso-combo-line-barchart/picasso-combo-line-barchart.component';
+import { PicassoStackedBarchartComponent } from './components/picasso-stacked-barchart/picasso-stacked-barchart.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { PicassoComboLineBarchartComponent } from './components/picasso-combo-li
     PicassoScatterplotWithImagesComponent,
     PicassoLineChartComponent,
     PicassoMultiLineChartComponent,
-    PicassoComboLineBarchartComponent
+    PicassoComboLineBarchartComponent,
+    PicassoStackedBarchartComponent
   ],
   imports: [
     RoutingModule,

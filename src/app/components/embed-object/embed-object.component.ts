@@ -19,7 +19,14 @@ export class EmbedObjectComponent implements OnInit {
 	viz2 = {
 		type: 'QdtViz',
 		props: {
-			type: 'barchart', id: 'a5e0f12c-38f5-4da9-8f3f-0e4566b28398', height: '300px',
+      type: 'barchart',
+      id: 'a5e0f12c-38f5-4da9-8f3f-0e4566b28398',
+      height: '300px',
+      exportData: true,
+      exportImg: true,
+      exportImgOptions: { width: 600, height: 400, format: 'JPG' },
+      exportPdf: true,
+      exportPdfOptions: { documentSize: { width: 300, height: 150 } },
 		},
     };
     

@@ -2,27 +2,26 @@ import { Component, OnInit, ElementRef } from '@angular/core';
 import { HighlightJsService } from 'angular2-highlight-js';
 
 @Component({
-  selector: 'selection-toolbar',
-  templateUrl: './selection-toolbar.component.html',
-  styleUrls: ['./selection-toolbar.component.css']
+  selector: 'picasso-stacked-barchart',
+  templateUrl: './picasso-stacked-barchart.component.html',
+  styleUrls: ['./picasso-stacked-barchart.component.css']
 })
-export class SelectionToolbarComponent implements OnInit {
+export class PicassoStackedBarchartComponent implements OnInit {
 
 	constructor(private el: ElementRef, private service : HighlightJsService) { }
 
 	viz1 = {
-        type: 'QdtSelectionToolbar',
-        props: {
-          type: 'QdtSelectionToolbar', 
-          title: 'MY SELECTIONS',
-          btnText: 'Clear Selections',
-        },
+		type: 'QdtSelectionToolbar',
+		props: {
+			type: 'QdtSelectionToolbar', height: '300px',
+		},
 	};
 	viz2 = {
-        type: 'QdtViz',
+        type: 'QdtPicasso',
         props: {
-          type: 'QdtViz', id: 'ycppXj', 
-          height: '300px',
+            type: 'stackedBarchart',
+            cols: ['Case Owner Group', 'Priority', '=Count(Distinct [%CaseId])'],
+            outerHeight: 300,
         },
     };
     
@@ -43,15 +42,15 @@ export class SelectionToolbarComponent implements OnInit {
         viz1 = {
             type: 'QdtSelectionToolbar',
             props: {
-                type: 'QdtSelectionToolbar', 
-                title: 'MY SELECTIONS',
-                btnText: 'Clear Selections',
+                type: 'QdtSelectionToolbar', height: '300px',
             },
         };
         viz2 = {
-            type: 'QdtViz',
+            type: 'QdtPicasso',
             props: {
-                type: 'QdtViz', id: 'ycppXj', height: '300px',
+                type: 'stackedBarchart',
+                cols: ['Case Owner Group', 'Priority', '=Count(Distinct [%CaseId])'],
+                outerHeight: 300,
             },
         };
     `;

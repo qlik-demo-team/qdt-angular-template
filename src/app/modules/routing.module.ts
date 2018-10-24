@@ -14,6 +14,7 @@ import { PicassoVerticalBarchartComponent } from '../components/picasso-vertical
 import { SearchComponent } from '../components/search/search.component';
 import { SelectionToolbarComponent } from '../components/selection-toolbar/selection-toolbar.component';
 import { SessionObjectComponent } from '../components/session-object/session-object.component';
+import { PicassoStackedBarchartComponent } from '../components/picasso-stacked-barchart/picasso-stacked-barchart.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -30,6 +31,7 @@ const routes: Routes = [
   { path: 'search', component: SearchComponent },
   { path: 'selection-toolbar', component: SelectionToolbarComponent },
   { path: 'session-object', component: SessionObjectComponent },
+  { path: 'picasso-stacked-barchart', component: PicassoStackedBarchartComponent },
   { path: '**', redirectTo: '/' },
 ];
 
