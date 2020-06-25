@@ -1,11 +1,6 @@
 <div class="row">
     <div class="col-md-12">
-        <qdt-component [Component]="viz1.type" [props]="viz1.props"></qdt-component>
-    </div>
-</div>
-<div class="row">
-    <div class="col-md-12">
-        <qdt-component [Component]="viz2.type" [props]="viz2.props"></qdt-component>
+        <qdt-component [Component]="QdtViz" [options]="viz1.props" [connection]="1"></qdt-component>
     </div>
 </div>
 
